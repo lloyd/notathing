@@ -1,0 +1,17 @@
+{
+    "name": "blogch.at",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "express": "2.5.0",
+        "postprocess": "0.2.4",
+        "winston": "0.5.6"
+    },
+    "devDependencies": {
+    },
+    "scripts": {
+    },
+    "engines": {
+        "node": ">= 0.6.2"
+    }
+}
