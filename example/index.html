@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+<html>
 <head>
 <title>sample blogch.at app</title>
-<script src="http://blogch.at/include.js">
-<script src="/jquery.js">
+<script src="http://blogch.at/include.js"></script>
+<script src="/jquery.js"></script>
 </head>
 <body>
-  <pre/>
-  <button>add a comment</button> 
+  <pre></pre>
+  <div id="blogchatButton"></div>
 </body>
 <script>
 BlogChat.comments(function(r) {
   $("pre").text(JSON.stringify(r, null, 4));
 });
-$("button").click(BlogChat.addComment());
+BlogChat.createButton($("#blogchatButton")[0]);
 </script>
+</html>

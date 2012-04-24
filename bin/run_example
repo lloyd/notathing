@@ -5,8 +5,9 @@ var express = require('express'),
 
 var app = express.createServer();
 
+// testing!
 app.use(pp(function(req, content) {
-  return content.replace('http://blogch.at', 'http://127.0.0.1:3000');
+  return content.replace(new RegExp('http://blogch.at', 'g'), 'http://127.0.0.1:3000');
 }));
 
 app.use(express.static(__dirname + "/../example"));
